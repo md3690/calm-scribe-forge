@@ -1,6 +1,7 @@
 import { Navigation } from "@/components/Navigation";
 import { HeroPost } from "@/components/HeroPost";
 import { BlogCard } from "@/components/BlogCard";
+import { AdSpace } from "@/components/AdSpace";
 import heroImage from "@/assets/hero-ai.jpg";
 import postTech from "@/assets/post-tech.jpg";
 import postML from "@/assets/post-ml.jpg";
@@ -90,6 +91,11 @@ const Index = () => {
         <HeroPost {...heroPost} />
       </section>
 
+      {/* Top Banner Ad */}
+      <section className="container mx-auto px-4 py-8">
+        <AdSpace size="banner" />
+      </section>
+
       {/* Latest Posts Grid */}
       <section className="container mx-auto px-4 py-12 md:py-16">
         <div className="mb-12">
@@ -100,7 +106,16 @@ const Index = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {latestPosts.map((post) => (
+          {latestPosts.slice(0, 3).map((post) => (
+            <BlogCard key={post.slug} {...post} />
+          ))}
+          
+          {/* Ad Space in Grid */}
+          <div className="flex items-center">
+            <AdSpace size="medium" />
+          </div>
+          
+          {latestPosts.slice(3).map((post) => (
             <BlogCard key={post.slug} {...post} />
           ))}
         </div>

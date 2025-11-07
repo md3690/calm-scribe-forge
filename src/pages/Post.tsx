@@ -1,5 +1,6 @@
 import { Navigation } from "@/components/Navigation";
 import { AuthorBio } from "@/components/AuthorBio";
+import { AdSpace } from "@/components/AdSpace";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Clock, Share2, Bookmark, Twitter, Facebook, Linkedin } from "lucide-react";
@@ -78,6 +79,11 @@ const Post = () => {
             Artificial intelligence has transcended its status as a buzzword to become an integral part of our daily lives. From the moment we wake up to the time we go to bed, AI systems are working behind the scenes, making decisions that affect everything from our social media feeds to our healthcare.
           </p>
 
+          {/* First Ad Space */}
+          <div className="my-12 not-prose">
+            <AdSpace size="banner" />
+          </div>
+
           <h2 className="text-3xl font-bold mt-12 mb-6">The Current State of AI</h2>
           
           <p className="text-lg leading-relaxed mb-6">
@@ -104,6 +110,11 @@ const Post = () => {
             Despite the incredible progress, we must remain thoughtful about the challenges AI presents. Questions of bias in algorithms, privacy concerns, job displacement, and the need for transparent AI systems are more pressing than ever. As we continue to integrate AI into critical aspects of society, addressing these concerns becomes not just important, but essential.
           </p>
 
+          {/* Mid-Article Ad Space */}
+          <div className="my-12 not-prose">
+            <AdSpace size="medium" />
+          </div>
+
           <h2 className="text-3xl font-bold mt-12 mb-6">Looking Ahead</h2>
           
           <p className="text-lg leading-relaxed mb-6">
@@ -124,6 +135,11 @@ const Post = () => {
             avatar={authorAvatar}
             bio="Tech journalist and AI researcher with over 10 years of experience covering emerging technologies. Passionate about making complex technical concepts accessible to everyone."
           />
+        </div>
+
+        {/* Post-Article Ad Space */}
+        <div className="mb-16">
+          <AdSpace size="large" />
         </div>
       </article>
 
