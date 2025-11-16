@@ -39,7 +39,7 @@ export const HeroPost = ({
 
           {/* Content Section */}
           <div className="p-8 md:p-12 flex flex-col justify-center">
-            <Badge className="w-fit mb-4 bg-primary text-primary-foreground">
+            <Badge className="w-fit mb-4 bg-foreground text-background">
               {category}
             </Badge>
             
