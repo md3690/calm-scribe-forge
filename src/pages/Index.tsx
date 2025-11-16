@@ -105,13 +105,13 @@ const Index = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="space-y-0 md:grid md:grid-cols-2 lg:grid-cols-3 md:gap-8 md:space-y-0">
           {latestPosts.slice(0, 3).map((post) => (
             <BlogCard key={post.slug} {...post} />
           ))}
           
           {/* Ad Space in Grid */}
-          <div className="flex items-center">
+          <div className="flex items-center border-b border-border pb-6 mb-6 md:border-b-0 md:pb-0 md:mb-0">
             <AdSpace size="medium" />
           </div>
           
