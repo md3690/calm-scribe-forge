@@ -16,7 +16,7 @@ const Post = () => {
       {/* Article Header */}
       <article className="container mx-auto px-4 max-w-4xl">
         <div className="py-12 md:py-16">
-          <Badge className="mb-6 bg-primary text-primary-foreground">
+          <Badge className="mb-6 bg-foreground text-background">
             Artificial Intelligence
           </Badge>
 
