@@ -38,7 +38,7 @@ export const BlogCard = ({
           {category}
         </Badge>
 
-        <h3 className="text-xl font-bold mb-2 leading-tight group-hover:text-primary transition-colors line-clamp-2">
+        <h3 className="text-xl font-bold mb-2 leading-tight group-hover:text-foreground transition-colors line-clamp-2">
           {title}
         </h3>
 
