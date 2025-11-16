@@ -60,7 +60,7 @@ export const Navigation = () => {
               {isDark ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             </Button>
 
-            <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90">
+            <Button className="hidden md:inline-flex bg-foreground text-background hover:bg-foreground/90">
               Get Started
             </Button>
 
